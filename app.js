@@ -23,3 +23,12 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+function handleSearch() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+    if (searchTerm === 'findme') {
+      window.location.href = 'More/findme.html';
+    } else {
+      alert('No matching result found.');
+    }
+  }
