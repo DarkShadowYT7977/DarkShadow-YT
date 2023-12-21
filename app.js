@@ -32,3 +32,9 @@ function handleSearch() {
       alert('No matching result found.');
     }
   }
+  function openHiPage() {
+    window.location.href = 'hi.html';
+  }
+  function openHiPage2() {
+    window.location.href = 'More/findme.html';
+  }
