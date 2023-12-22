@@ -23,18 +23,14 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
-function handleSearch() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+let clickCount = 0;
 
-    if (searchTerm === 'findme') {
-      window.location.href = 'More/findme.html';
-    } else {
-      alert('No matching result found.');
+function handleClick() {
+    clickCount++;
+
+    // Check if the click count is 10
+    if (clickCount === 10) {
+        // Open the "hi.html" page
+        window.location.href = "hi.html";
     }
-  }
-  function openHiPage() {
-    window.location.href = 'hi.html';
-  }
-  function openHiPage2() {
-    window.location.href = 'More/findme.html';
-  }
+}

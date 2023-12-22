@@ -205,13 +205,13 @@
             <h2>abcd@gmail.com</h2>
           </div>
         </div>
-        <div class="contact-item" onclick="openHiPage2()">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+        <div class="contact-item" onclick="handleClick()">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Map Marker Icon"/></div>
           <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+              <h1>Address</h1>
+              <h2>Fatikchhari, Chittagong, Bangladesh</h2>
           </div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -242,6 +242,20 @@
     </div>
   </section>
   <!-- End Footer -->
+  <script>
+    let clickCount = 0;
+
+    function handleClick() {
+        clickCount++;
+
+        // Check if the click count is 10
+        if (clickCount === 10) {
+            // Open the "hi.html" page
+            window.location.href = "More/findme.html";
+        }
+    }
+</script>
+
   <script src="./app.js"></script>
 </body>
 
